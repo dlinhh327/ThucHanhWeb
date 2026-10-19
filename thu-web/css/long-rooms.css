@@ -1,0 +1,65 @@
+/* ==========================================
+   THÀNH VIÊN 2: GIAO DIỆN QUẢN LÝ PHÒNG
+   ========================================== */
+
+#rooms > button {
+    margin-bottom: 10px;
+}
+
+.content-form {
+    max-width: 550px;
+    margin: 20px 0;
+    padding: 20px;
+    background: #f8faff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.content-form h3 {
+    margin-top: 0;
+    color: #17365d;
+}
+
+.content-form label {
+    display: block;
+    margin-top: 15px;
+}
+
+.content-form input,
+.content-form select,
+.content-form textarea {
+    width: 100%;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.content-form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.cancel-btn {
+    background: #6c757d;
+}
+
+/* ==========================================
+   THÀNH VIÊN 4: TRẠNG THÁI YÊU CẦU
+   ========================================== */
+
+.status-pending {
+    color: #d97706;
+    font-weight: bold;
+}
+
+.status-approved {
+    color: #16803c;
+    font-weight: bold;
+}
+
+.status-rejected {
+    color: #dc3545;
+    font-weight: bold;
+}

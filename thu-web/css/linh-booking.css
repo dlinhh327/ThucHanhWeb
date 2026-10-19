@@ -1,0 +1,11 @@
+/* ==========================================
+   THÀNH VIÊN 3: GIAO DIỆN ĐẶT PHÒNG VÀ LỊCH
+   ========================================== */
+
+#bookingForm {
+    max-width: 600px;
+}
+
+#calendarTable th {
+    background: #e7efff;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - Quản lý phòng học</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/luong-reports.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="sidebar">
+            <h2>QUẢN LÝ<br>PHÒNG HỌC</h2>
+            <a href="luong-home.html" class="menu-link active">Trang chủ</a>
+            <a href="long-rooms.html" class="menu-link">Quản lý phòng học</a>
+            <a href="linh-calendar.html" class="menu-link">Lịch học</a>
+            <a href="linh-booking.html" class="menu-link">Đặt phòng</a>
+            <a href="long-requests.html" class="menu-link">Yêu cầu đặt phòng</a>
+            <a href="quan-users.html" class="menu-link">Người dùng</a>
+            <a href="luong-reports.html" class="menu-link">Báo cáo</a>
+            <button id="logoutBtn" class="logout-btn">Đăng xuất</button>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm dữ liệu...">
+                <span id="currentUser">Quản trị viên</span>
+            </div>
+
+            <div id="home" class="page">
+                <h1>Trang chủ</h1>
+                <p>Chào mừng đến với hệ thống quản lý phòng học.</p>
+
+                <div class="cards">
+                    <div class="card">
+                        <p>Tổng số phòng</p>
+                        <h2 id="totalRooms">0</h2>
+                    </div>
+                    <div class="card">
+                        <p>Phòng đang sử dụng</p>
+                        <h2 id="usedRooms">0</h2>
+                    </div>
+                    <div class="card">
+                        <p>Phòng trống</p>
+                        <h2 id="emptyRooms">0</h2>
+                    </div>
+                    <div class="card">
+                        <p>Yêu cầu chờ duyệt</p>
+                        <h2 id="pendingRequests">0</h2>
+                    </div>
+                </div>
+
+                <div class="welcome-box">
+                    <h3>Thông tin hệ thống</h3>
+                    <p>Website hỗ trợ quản lý phòng học, đặt phòng, lịch học và yêu cầu sử dụng phòng.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/luong-reports.js"></script>
+</body>
+
+</html>

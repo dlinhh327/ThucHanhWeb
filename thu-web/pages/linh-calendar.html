@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch học - Linh</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/linh-booking.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="sidebar">
+            <h2>QUẢN LÝ<br>PHÒNG HỌC</h2>
+            <a href="luong-home.html" class="menu-link">Trang chủ</a>
+            <a href="long-rooms.html" class="menu-link">Quản lý phòng học</a>
+            <a href="linh-calendar.html" class="menu-link active">Lịch học</a>
+            <a href="linh-booking.html" class="menu-link">Đặt phòng</a>
+            <a href="long-requests.html" class="menu-link">Yêu cầu đặt phòng</a>
+            <a href="quan-users.html" class="menu-link">Người dùng</a>
+            <a href="luong-reports.html" class="menu-link">Báo cáo</a>
+            <button id="logoutBtn" class="logout-btn">Đăng xuất</button>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm dữ liệu...">
+                <span id="currentUser">Quản trị viên</span>
+            </div>
+
+            <div id="calendar" class="page">
+                <h1>Lịch học</h1>
+
+                <div class="table-container">
+                    <table id="calendarTable">
+                        <thead>
+                            <tr>
+                                <th>Ngày học</th>
+                                <th>Phòng</th>
+                                <th>Thời gian bắt đầu</th>
+                                <th>Thời gian kết thúc</th>
+                                <th>Nội dung</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/linh-booking.js"></script>
+</body>
+
+</html>

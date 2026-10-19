@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý người dùng - Minh Quân</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/quan-login-users.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="sidebar">
+            <h2>QUẢN LÝ<br>PHÒNG HỌC</h2>
+            <a href="luong-home.html" class="menu-link">Trang chủ</a>
+            <a href="long-rooms.html" class="menu-link">Quản lý phòng học</a>
+            <a href="linh-calendar.html" class="menu-link">Lịch học</a>
+            <a href="linh-booking.html" class="menu-link">Đặt phòng</a>
+            <a href="long-requests.html" class="menu-link">Yêu cầu đặt phòng</a>
+            <a href="quan-users.html" class="menu-link active">Người dùng</a>
+            <a href="luong-reports.html" class="menu-link">Báo cáo</a>
+            <button id="logoutBtn" class="logout-btn">Đăng xuất</button>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm dữ liệu...">
+                <span id="currentUser">Quản trị viên</span>
+            </div>
+
+            <div id="users" class="page">
+                <h1>Quản lý người dùng</h1>
+
+                <button type="button" id="addUserBtn">+ Thêm người dùng</button>
+
+                <form id="userForm" class="content-form hidden">
+                    <h3>Thêm người dùng</h3>
+
+                    <label>Tên đăng nhập</label>
+                    <input type="text" id="newUsername" required>
+
+                    <label>Họ tên</label>
+                    <input type="text" id="newFullName" required>
+
+                    <label>Email</label>
+                    <input type="email" id="newEmail" required>
+
+                    <label>Vai trò</label>
+                    <select id="newRole">
+                        <option value="Người dùng">Người dùng</option>
+                        <option value="Quản trị viên">Quản trị viên</option>
+                    </select>
+
+                    <label>Mật khẩu</label>
+                    <input type="password" id="newPassword" minlength="6" required>
+
+                    <button type="submit">Thêm người dùng</button>
+                    <button type="button" id="cancelUserBtn" class="cancel-btn">Hủy</button>
+                </form>
+
+                <div class="table-container">
+                    <table id="userTable">
+                        <thead>
+                            <tr>
+                                <th>Mã người dùng</th>
+                                <th>Họ tên</th>
+                                <th>Email</th>
+                                <th>Vai trò</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/quan-login-users.js"></script>
+</body>
+
+</html>

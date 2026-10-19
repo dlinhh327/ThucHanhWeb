@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt phòng học - Linh</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/linh-booking.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="sidebar">
+            <h2>QUẢN LÝ<br>PHÒNG HỌC</h2>
+            <a href="luong-home.html" class="menu-link">Trang chủ</a>
+            <a href="long-rooms.html" class="menu-link">Quản lý phòng học</a>
+            <a href="linh-calendar.html" class="menu-link">Lịch học</a>
+            <a href="linh-booking.html" class="menu-link active">Đặt phòng</a>
+            <a href="long-requests.html" class="menu-link">Yêu cầu đặt phòng</a>
+            <a href="quan-users.html" class="menu-link">Người dùng</a>
+            <a href="luong-reports.html" class="menu-link">Báo cáo</a>
+            <button id="logoutBtn" class="logout-btn">Đăng xuất</button>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm dữ liệu...">
+                <span id="currentUser">Quản trị viên</span>
+            </div>
+
+            <div id="booking" class="page">
+                <h1>Đặt phòng học</h1>
+
+                <form id="bookingForm" class="content-form">
+                    <label>Chọn phòng</label>
+                    <select id="roomSelect" required></select>
+
+                    <label>Ngày sử dụng</label>
+                    <input type="date" id="bookingDate" required>
+
+                    <label>Thời gian bắt đầu</label>
+                    <input type="time" id="startTime" required>
+
+                    <label>Thời gian kết thúc</label>
+                    <input type="time" id="endTime" required>
+
+                    <label>Mục đích sử dụng</label>
+                    <textarea id="purpose" placeholder="Nhập mục đích sử dụng" required></textarea>
+
+                    <button type="submit">Gửi yêu cầu đặt phòng</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/linh-booking.js"></script>
+</body>
+
+</html>

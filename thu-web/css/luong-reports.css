@@ -1,0 +1,49 @@
+/* ==========================================
+   THÀNH VIÊN 5: TRANG CHỦ VÀ THỐNG KÊ
+   ========================================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.card {
+    padding: 20px;
+    background: #f8faff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px #ddd;
+}
+
+.card p {
+    color: #68758a;
+}
+
+.card h2 {
+    margin-bottom: 0;
+    color: #2878e8;
+    font-size: 28px;
+}
+
+.welcome-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #f8faff;
+    border-left: 4px solid #2878e8;
+    border-radius: 5px;
+}
+
+/* ==========================================
+   THÀNH VIÊN 5: GIAO DIỆN BÁO CÁO
+   ========================================== */
+
+#reports .card {
+    border-top: 3px solid #2878e8;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 15px;
+    }
+}

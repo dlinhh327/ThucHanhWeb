@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý phòng học - Đặng Thành Long</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/long-rooms.css">
+</head>
+
+<body>
+    <div id="app">
+        <div class="sidebar">
+            <h2>QUẢN LÝ<br>PHÒNG HỌC</h2>
+            <a href="luong-home.html" class="menu-link">Trang chủ</a>
+            <a href="long-rooms.html" class="menu-link active">Quản lý phòng học</a>
+            <a href="linh-calendar.html" class="menu-link">Lịch học</a>
+            <a href="linh-booking.html" class="menu-link">Đặt phòng</a>
+            <a href="long-requests.html" class="menu-link">Yêu cầu đặt phòng</a>
+            <a href="quan-users.html" class="menu-link">Người dùng</a>
+            <a href="luong-reports.html" class="menu-link">Báo cáo</a>
+            <button id="logoutBtn" class="logout-btn">Đăng xuất</button>
+        </div>
+
+        <div class="main">
+            <div class="header">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm dữ liệu...">
+                <span id="currentUser">Quản trị viên</span>
+            </div>
+
+            <div id="rooms" class="page">
+                <h1>Quản lý phòng học</h1>
+
+                <button type="button" id="addRoomBtn">+ Thêm phòng</button>
+
+                <form id="roomForm" class="content-form hidden">
+                    <h3 id="roomFormTitle">Thêm phòng học</h3>
+                    <input type="hidden" id="roomId">
+
+                    <label>Mã phòng</label>
+                    <input type="text" id="roomCode" placeholder="Ví dụ: A103" required>
+
+                    <label>Tên phòng</label>
+                    <input type="text" id="roomName" placeholder="Nhập tên phòng" required>
+
+                    <label>Tòa nhà</label>
+                    <input type="text" id="roomBuilding" placeholder="Nhập tên tòa nhà" required>
+
+                    <label>Sức chứa</label>
+                    <input type="number" id="roomCapacity" min="1" required>
+
+                    <label>Trạng thái</label>
+                    <select id="roomStatus">
+                        <option value="Trống">Trống</option>
+                        <option value="Đang sử dụng">Đang sử dụng</option>
+                    </select>
+
+                    <button type="submit" id="saveRoomBtn">Thêm phòng</button>
+                    <button type="button" id="cancelRoomBtn" class="cancel-btn">Hủy</button>
+                </form>
+
+                <div class="table-container">
+                    <table id="roomTable">
+                        <thead>
+                            <tr>
+                                <th>Mã phòng</th>
+                                <th>Tên phòng</th>
+                                <th>Tòa nhà</th>
+                                <th>Sức chứa</th>
+                                <th>Trạng thái</th>
+                                <th>Thao tác</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/long-rooms.js"></script>
+</body>
+
+</html>
