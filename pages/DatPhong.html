@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đặt phòng học</title>
+    
+    <!-- Liên kết CSS (đã sửa chuẩn đường dẫn lùi 1 thư mục) -->
+    <link rel="stylesheet" href="../css/DatPhong-Lichhoc.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div id="app">
+
+        <!-- SIDEBAR BÊN TRÁI -->
+        <div class="sidebar">
+            <h2>QUẢN LÝ<br>PHÒNG HỌC</h2>
+            <a href="#" class="menu-link" data-page="home">Trang chủ</a>
+            <a href="#" class="menu-link" data-page="rooms">Quản lý phòng học</a>
+            <a href="#" class="menu-link" data-page="calendar">Lịch học</a>
+            <a href="#" class="menu-link active" data-page="booking">Đặt phòng</a>
+            <a href="#" class="menu-link" data-page="requests">Yêu cầu đặt phòng</a>
+            <a href="#" class="menu-link" data-page="users">Người dùng</a>
+            <a href="#" class="menu-link" data-page="reports">Báo cáo</a>
+            <button id="logoutBtn" class="logout-btn">Đăng xuất</button>
+        </div>
+
+        <!-- KHU VỰC NỘI DUNG CHÍNH -->
+        <div class="main">
+
+            <div class="header">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm dữ liệu...">
+                <span id="currentUser">Sinh viên Đặt phòng</span>
+            </div>
+
+            <!-- NỘI DUNG ĐẶT PHÒNG -->
+            <div id="booking" class="page">
+                <h1>Đặt phòng học</h1>
+
+                <form id="bookingForm" class="content-form">
+
+                    <label>Chọn phòng</label>
+                    <select id="roomSelect" required>
+                        <option value="">-- Chọn phòng --</option>
+                        <!-- Options sẽ được JavaScript tự động điền vào đây -->
+                    </select>
+
+                    <label>Ngày sử dụng</label>
+                    <input type="date" id="bookingDate" required>
+
+                    <label>Thời gian bắt đầu</label>
+                    <input type="time" id="startTime" required>
+
+                    <label>Thời gian kết thúc</label>
+                    <input type="time" id="endTime" required>
+
+                    <label>Mục đích sử dụng</label>
+                    <textarea id="purpose" placeholder="Nhập mục đích sử dụng" required></textarea>
+
+                    <button type="submit">Gửi yêu cầu đặt phòng</button>
+
+                </form>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Liên kết JavaScript (đã sửa chuẩn đường dẫn lùi 1 thư mục) -->
+    <script src="../javascript/DatPhong-Lichhoc.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+</html>

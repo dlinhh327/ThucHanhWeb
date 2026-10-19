@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lịch học</title>
+    
+    <!-- Liên kết CSS lùi 1 cấp để ra thư mục ngoài cùng -->
+    <link rel="stylesheet" href="../css/lich-hoc.css">
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+
+    <div id="app">
+        <!-- SIDEBAR BÊN TRÁI -->
+        <div class="sidebar">
+            <h2>QUẢN LÝ<br>PHÒNG HỌC</h2>
+            <a href="#" class="menu-link" data-page="home">Trang chủ</a>
+            <a href="#" class="menu-link" data-page="rooms">Quản lý phòng học</a>
+            <a href="#" class="menu-link active" data-page="calendar">Lịch học</a>
+            <a href="#" class="menu-link" data-page="booking">Đặt phòng</a>
+            <a href="#" class="menu-link" data-page="requests">Yêu cầu đặt phòng</a>
+            <a href="#" class="menu-link" data-page="users">Người dùng</a>
+            <a href="#" class="menu-link" data-page="reports">Báo cáo</a>
+            <button id="logoutBtn" class="logout-btn">Đăng xuất</button>
+        </div>
+        <!-- KHU VỰC NỘI DUNG CHÍNH -->
+        <div class="main">
+            <div class="header">
+                <input type="text" id="searchInput" placeholder="Tìm kiếm dữ liệu...">
+                <span id="currentUser">Sinh viên Xem lịch</span>
+            </div>
+
+            <!-- NỘI DUNG LỊCH HỌC -->
+            <div id="calendar" class="page">
+                <h1>Lịch học</h1>
+                <div class="table-container">
+                    <table id="calendarTable">
+                        <thead>
+                            <tr>
+                                <th>Ngày học</th>
+                                <th>Phòng</th>
+                                <th>Thời gian bắt đầu</th>
+                                <th>Thời gian kết thúc</th>
+                                <th>Nội dung</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Dữ liệu sẽ được JS tự động điền vào đây -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Liên kết JavaScript lùi 1 cấp -->
+    <script src="../javascript/lich-hoc.js"></script>
+    <script src="../script.js"></script>
+
+</body>
+</html>
